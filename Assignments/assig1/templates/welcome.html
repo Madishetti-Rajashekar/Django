@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome page</title>
+</head>
+<body>
+   {% if message == "Admin" %}
+        <h1>Welcome Admin</h1>
+   {% elif message == "Employee" %}
+        <h1>Welcome Employee</h1>
+   {% elif message == "Customer" %}
+        <h1>Welcome Customer</h1>
+   {% else %}
+       <h1>Incorrect type selected</h1>
+   {% endif %}
+</body>
+</html>
